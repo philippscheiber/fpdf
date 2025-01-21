@@ -4,8 +4,8 @@ require('fpdf.php');
 class PDF extends FPDF {
     function Header() {
         $this->SetFont('Arial', 'B', 15);
-        $this->Image('watermark.png', 0, 0, 210, 300);
-        $this->Image('logo-small.png', 10, 10, 10);
+        $this->Image('Wasserzeichen-erstellen-Titel.png', 0, 0, 210, 300);
+        $this->Image('HAK_Imst_Logo-1.png', 10, 10, 10);
         $this->Cell(12);
         $this->Cell(100, 10, 'Viktator und Seppieee', 0, 1);
         $this->Ln(5);
@@ -23,6 +23,7 @@ $pdf->SetAutoPageBreak(true, 15);
 
 $pdf->AddPage();
 $pdf->SetFont('Arial', '', 12);
+
 
 $text = "An der HAK Imst, einer angesehenen Handelsakademie in Tirol, war die Nachricht über die bevorstehende Hochzeit von Viktator und Seppi in aller Munde. Es war der Tag, an dem Viktator, die in den letzten Jahren als charmante und kluge Schülerin der HAK Imst bekannt war, ihren langjährigen Freund Seppi heiratete – und es war mehr als nur ein gewöhnliches Ereignis. Es war ein Moment, der nicht nur ihre Herzen, sondern auch das ganze Schulumfeld ergriff.
 
